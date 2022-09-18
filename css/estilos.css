@@ -116,7 +116,7 @@ font-size: 1.5rem;
     flex-direction: column;
 }
 .job_borde,.gate_borde,.love_borde{
-    border: 0.11rem solid grey;
+    border: 0.11rem solid rgb(0,0,0,0.3);
     
 }
 
@@ -153,6 +153,7 @@ font-size: 1.5rem;
  .job_p,.gate_p,.love_p{
     width: 18vw;
     font-size: 0.8rem;
+    color: rgba(0,0,0,0.5)
 }
 .doble {
     display: flex;
