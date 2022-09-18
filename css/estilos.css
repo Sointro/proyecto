@@ -1,42 +1,204 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
     font-family: Arial;;
 }
-header {
+.header_flex {
+    display: flex;
     background-color: rgb(52,58,64);
-    width: 100%;
-    height: 75px;
-  }
-.logo {
-    margin-left: 90px;
-    margin-top: 5px;
-}
-.tres {
-    text-decoration: none;
-    color: silver;
-    padding: 10px;
+    width: 95vw;;
+    height:10vh;
+    justify-content: center;
+    margin: 0 auto;
 }
 .logo {
-    float: left;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding-left: 3rem;
+}
+.img_logo {
+    width: 15%;
 }
 .hedTit {
-    float: left;
     color: white;
-    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: normal;
 }
-.laconfe .tres .comprar {
-    float: right;
-    margin-top: 25px;
+.navegador {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
 }
-.laconfe {
-    color:white;
-    padding: 10px;
+.link {
     text-decoration: none;
-    margin-left: 200px;
-    line-height: 70px;
+    color: gray;;
+    
 }
-.comprar {
-    color:green;
-    padding: 10px;
+.blanco {
+    color: white;
+}
+.verde {
+    color: green;
+}
+.imagen_ppal {
+    display: flex;
+    width: 95vw;
+    height: 80vh;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.imagen {
+    background: linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagen/ba1.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.varios {
+    color: white;
+    padding: 15rem 7rem;
+    text-align: right;
+}
+.titulo {
+    font-size: 2rem;
+    font-weight: 300;
+}
+.parrafo {
+    font-weight: 0.3rem;
+}
+.link_dos  {
+   padding-top: 2rem;
+   
+}
+.link_dos a {
     text-decoration:none ;
+    color:white;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    padding: 0.7rem; 
+    font-weight: 0.3rem;   
+} 
+.link_dost {
+    background-color: rgb(41 167 68);
+}
+.orador {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 95vw;
+    height:80vh;
+}
+.orador h2 {
+    font-size: 0.6rem;
+    padding-top: 1rem;
+}
+.orador h3 {
+font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.orador_ubi {
+    display: flex;
+    width: 80vw;
+    justify-content: space-evenly;
+ }
+ .job .gate .love {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.job_borde,.gate_borde,.love_borde{
+    border: 0.11rem solid grey;
+    
+}
+
+ .job_ubi,.gate_ubi,.love_ubi {
+    width:100%;
+    height: 33%;
+    padding: 1rem 0.5rem 0 1rem;
+    font-display: flex;
+    flex-wrap: wrap;
+    
+ }
+ .job_ubi a,.gate_ubi a,.love_ubi a{
+    text-decoration: none;
+    background-color: rgb(254 192 7);
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem;
+    
+ }
+ .love_ubi a{
+    background-color: rgb(52,58,64);
+    color: white;
+ }
+ .job_ubi .react,.gate_ubi .react,.love_ubi .start {
+    background-color: rgb(116 199 212);
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+ }
+ .love_ubi .start {
+    background-color: red;
+ }
+ 
+ .job_p,.gate_p,.love_p{
+    width: 18vw;
+    font-size: 0.8rem;
+}
+.doble {
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+    height: 70vh;
+    margin: 2rem auto;
+}
+.izquierda {
+    background-image: url("../multimedia/imagenes/honolulu.jpg");
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:  0.05rem solid white;
+}
+.derecha {
+    background-color: rgb(52,58,64);
+    width: 50%;
+    height: 100%;
+    border: 0.05rem solid white;
+    color: white;
+    padding: 1.5rem 0.5rem 0 0.8rem;
+}
+.derecha h2{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.derecha p {
+font-size: 0.8rem;
+font-weight: normal;
+}
+.conoce_bs {
+    border: 1px double white ;
+    width: 6rem;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    border-radius:0.3rem ;
+    
+}
+.conoce_bs a {
+    color: white;
+    text-decoration:none;
+    font-weight: normal;
+    font-size: 00.8rem;
+    padding: 3rem 0.2rem;
 }

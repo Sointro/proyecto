@@ -9,61 +9,79 @@
     <title>Proyecto Html</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img class="logo" src="./multimedia/imagenes/codoacodo.png" alt="logo Codo a Codo" loading="lazy" width="100px"/>
-            <h3 class="hedTit">Conf. Bs. As.</h3>
-            <a class="laconfe" href="#">La conferencia</a>
-            <a class="tres" href="./paginas/losoradores.html">Los oradores</a>
-            <a class="tres" href="./paginas/lugaryfecha.html">El lugar y la fecha</a>
-            <a class="tres" href="./paginas/contacto.html">Conviértete en orador</a>
-            <a class="comprar" href="./paginas/comprartickets.html">Comprar tickets</a>
-         </nav>
+    <header class="header_flex">
+        <div class="logo">
+          <img  class="img_logo" src="./multimedia/imagenes/codoacodo.png" alt="logo Codo a Codo" loading="lazy"> 
+            <h2 class="hedTit">Conf. Bs. As.</h2>
+        </div> 
+        <nav class="navegador">
+              <a class="link blanco" href="#">La conferencia</a>  
+              <a class="link" href="./paginas/losoradores.html">Los oradores</a>
+              <a class="link" href="./paginas/lugaryfecha.html">El lugar y la fecha</a>
+              <a class="link" href="./paginas/contacto.html">Conviértete en orador</a>
+              <a class="link verde" href="./paginas/comprartickets.html">Comprar tickets</a>
+        </nav>
     </header>
     <main>
-        <section>
-            <img src="./multimedia/imagenes/ba1.jpg" alt="Imagen de Bs. As. Palacio de Aguas Argentinas" loading="lazy" width="90%" />
-            <h1>Conferencia Bs. As.</h1>
-            <p>Bs. As. llega por primera vez a Argentina. Un evento para compartir con <br> nuestra comunidad el conocimiento y la experiencia de los expertos que <br> están creando el futuro de internet. Ven a conocer a los miembros del <br> evento, a otros estudiantes de Codo a Codo y los oradores de primer <br> nivel que tenemos para ti. Te esperamos! </p>
-            <a href="./paginas/contacto.html">Quiero ser Orador</a>
-            <a href="./paginas/comprartickets.html">Quiero comprar tickets</a>
-        </section>
+        <section class="imagen_ppal">
+             <div class="imagen" >
+             <div class="varios">
+                <h1 class="titulo">Conferencia Bs. As.</h1><br>
+                <p clas="parrafo">Bs. As. llega por primera vez a Argentina. Un evento para compartir con <br><br> nuestra comunidad el conocimiento y la experiencia de los expertos que <br><br> están creando el futuro de internet. Ven a conocer a los miembros del <br><br> evento, a otros estudiantes de Codo a Codo y los oradores de primer <br><br> nivel que tenemos para ti. Te esperamos! </p>
+                 <div class="link_dos">
+                    <a  href="./paginas/contacto.html">Quiero ser Orador</a>
+                    <a class="link_dost" href="./paginas/comprartickets.html">Comprar tickets</a>
+                 </div>
+             </div>
+             </div
+       </section>
     </main>
-        <section>
-            <br>
-            <h7>CONOCE A LOS</h7>
-            <h2>ORADORES</h2>
-            <div>
-                <img src="./multimedia/imagenes/steve.jpg" alt="Steve Jobs" width="300px" loading="lazy"/>
-                <a href="">JavaSript</a>
-                <a href="">React</a>
-                <h3>Steve Jobs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat rem hic alias ab sit eligendi!</p>
-            </div>
-            <div>
-                <img src="./multimedia/imagenes/bill.jpg" alt="Bill Gates" width="300px" loading="lazy" />
-                <a href="">JavaSript</a>
-                <a href="">React</a>
-                <h3>Bill Gates</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut magnam officiis esse blanditiis perspiciatis at! Quasi sunt facilis molestiae, inventore in voluptates asperiores aut a.</p>
-            </div>
-            <div>
-                <img src="./multimedia/imagenes/ada.jpeg" alt="Ada Lovelace" width="300px" loading="lazy" />
-                <a href="">Negocios</a>
-                <a href="">Startups</a>
-                <h3>Ada Lovelace</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut magnam officiis esse blanditiis perspiciatis at! Quasi sunt facilis molestiae, inventore in voluptates asperiores aut a.</p>
-            </div>
+        <section class="orador">
+             <h2>CONOCE A LOS</h2>
+            <h3>ORADORES</h3>
+            <div class="orador_ubi">
+                <div class="job job_borde" >
+                    <img  src="./multimedia/imagenes/steve.jpg" alt="Steve Jobs" width="300px" loading="lazy"/>
+                    <div class="job_ubi">
+                        <a href="">JavaSript</a>
+                        <a class="react" href="">React</a>
+                        <h4>Steve Jobs</h4>
+                    
+                 <!--   <div class="job_p">-->
+                        <p class="job_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique officia, et repudiandae illum ab odit quis repellendus reiciendis voluptatem, non architecto ex iure voluptates nihil!!</p>
+                    </div>
+                </div>
+                <div class="gate gate_borde">
+                    <img src="./multimedia/imagenes/bill.jpg" alt="Bill Gates" width="300px" loading="lazy" />
+                    <div class="gate_ubi">
+                         <a href="">JavaSript</a>
+                         <a class="react" href="">React</a>
+                         <h4>Bill Gates</h4>
+                    
+                  <!--  <div class="gate_p">-->
+                        <p class="gate_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis debitis corrupti suscipit delectus totam voluptate, sequi ipsam natus sunt quae harum. Error veniam id natus..</p>
+                   </div>
+                 </div>
+                 <div class="love love_borde">
+                    <img src="./multimedia/imagenes/ada.jpeg" alt="Ada Lovelace" width="300px" loading="lazy" /> 
+                    <div class="love_ubi">
+                        <a href="">Negocios</a>
+                        <a class="start" href="">Startups</a>
+                        <h4>Ada Lovelace</h4>
+                        <p class="love_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi, nostrum illo, ut voluptate, est officia nisi vero obcaecati quibusdam tempore ab id! Laborum, deserunt..</p>
+                    </div>
+                </div>
+            </div
         </section>
-        <br>
-        <section>
-            <div>
-                <img src="./multimedia/imagenes/honolulu.jpg" alt="Honululu" width="40%" loading="lazy"/>
+         <section class="doble">
+            <div class="izquierda">
             </div>
-            <div>
+            <div class="derecha">
                 <h2>Bs. As. -  Octubre</h2>
                 <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honululu es la <br> más sureña entre las principales ciudades estadounidenses. Aunque el nombre de Honululu se refiere al área <br> urbana en la costa sureste de la isla de Ohau, la ciudad y el condado de Honolulu han formado una ciudad- <br>condado consolidada, que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup>de superficie) </p>
-                <a href="">Conoce más</a>
+                <div class="conoce_bs">
+                     <a href="">Conoce más</a>
+                </div>
             </div>
         </section>
         <br>
