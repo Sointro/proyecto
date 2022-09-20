@@ -7,7 +7,7 @@
 .header_flex {
     display: flex;
     background-color: rgb(52,58,64);
-    width: 95vw;;
+    width: 100vw;;
     height:10vh;
     justify-content: center;
     margin: 0 auto;
@@ -46,7 +46,7 @@
 }
 .imagen_ppal {
     display: flex;
-    width: 95vw;
+    width: 100vw;
     height: 80vh;
     border: 1px solid black;
     margin: 0 auto;
@@ -66,14 +66,15 @@
     color: white;
     padding: 15rem 7rem;
     text-align: right;
+    line-height: 0.8rem;
+    font-weight:0.3rem;
 }
 .titulo {
     font-size: 2rem;
     font-weight: 300;
+    margin-bottom: 1rem
 }
-.parrafo {
-    font-weight: 0.3rem;
-}
+
 .link_dos  {
    padding-top: 2rem;
    
@@ -94,7 +95,7 @@
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    width: 95vw;
+    width: 100vw;
     height:80vh;
 }
 .orador h2 {
@@ -107,7 +108,7 @@ font-size: 1.5rem;
 }
 .orador_ubi {
     display: flex;
-    width: 80vw;
+    width: 80%;
     justify-content: space-evenly;
  }
  .job .gate .love {
@@ -116,25 +117,26 @@ font-size: 1.5rem;
     flex-direction: column;
 }
 .job_borde,.gate_borde,.love_borde{
-    border: 0.11rem solid rgb(0,0,0,0.3);
-    
+    border: 0.09rem thin  rgb(0,0,0,0.05) ;
+    box-shadow: 0px 2px 3px 0px rgb(30 30 30 );;
 }
-
  .job_ubi,.gate_ubi,.love_ubi {
     width:100%;
-    height: 33%;
+    height: 40%;
     padding: 1rem 0.5rem 0 1rem;
     font-display: flex;
     flex-wrap: wrap;
-    
  }
+.job_ubi h4,.gate_ubi h4,.love_ubi h4 {
+    margin-bottom: 1rem;
+}
  .job_ubi a,.gate_ubi a,.love_ubi a{
     text-decoration: none;
     background-color: rgb(254 192 7);
+    border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
     color: black;
     font-weight: bold;
     font-size: 0.8rem;
-    
  }
  .love_ubi a{
     background-color: rgb(52,58,64);
@@ -149,23 +151,23 @@ font-size: 1.5rem;
  .love_ubi .start {
     background-color: red;
  }
- 
  .job_p,.gate_p,.love_p{
     width: 18vw;
     font-size: 0.8rem;
-    color: rgba(0,0,0,0.5)
+    color: rgba(0,0,0,0.7);
+    line-height: 1.2rem;
 }
 .doble {
     display: flex;
     justify-content: center;
-    width: 95vw;
-    height: 70vh;
+    width: 100vw;
+    height: 50vh;
     margin: 2rem auto;
 }
 .izquierda {
-    background-image: url("../multimedia/imagenes/honolulu.jpg");
+    background-image: url("../multimedia/imagenes/bsastres.jpg");
     width: 50%;
-    height: 50vh;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -187,6 +189,9 @@ font-size: 1.5rem;
 .derecha p {
 font-size: 0.8rem;
 font-weight: normal;
+line-height: 1.4rem;
+padding-right: 1rem;
+text-align: justify;
 }
 .conoce_bs {
     border: 1px double white ;
@@ -194,7 +199,6 @@ font-weight: normal;
     margin-top: 1rem;
     padding: 0.3rem;
     border-radius:0.3rem ;
-    
 }
 .conoce_bs a {
     color: white;
