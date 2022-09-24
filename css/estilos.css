@@ -51,7 +51,7 @@
     border: 1px solid black;
     margin: 0 auto;
 }
-.imagen {
+.imagen_uno {
     background: linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./imagen/ba1.jpg);
     width: 100%;
     height: 100%;
@@ -94,43 +94,47 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
-    width: 100vw;
-    height:80vh;
 }
 .orador h2 {
     font-size: 0.6rem;
     padding-top: 1rem;
 }
 .orador h3 {
-font-size: 1.5rem;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
 }
 .orador_ubi {
-    display: flex;
-    width: 80%;
-    justify-content: space-evenly;
- }
- .job .gate .love {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+     width:100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
-.job_borde,.gate_borde,.love_borde{
-    border: 0.09rem thin  rgb(0,0,0,0.05) ;
-    box-shadow: 0px 2px 3px 0px rgb(30 30 30 );;
-}
- .job_ubi,.gate_ubi,.love_ubi {
-    width:100%;
-    height: 40%;
-    padding: 1rem 0.5rem 0 1rem;
-    font-display: flex;
-    flex-wrap: wrap;
+.orador_flex {
+    width:80%;
+    display:flex;
+    justify-content:space-between;
  }
-.job_ubi h4,.gate_ubi h4,.love_ubi h4 {
+ .tarjeta {
+    background-color: white;
+    width: 30%;
+    border:1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+    box-shadow: 0.5rem 0 0.5rem 0;
+}
+
+.imagen {
+    width: 100%;
+    border-radius: 10px;
+    height:58%;
+}
+ .tar_ancla {
+   width:100%;
+   padding: 1rem 0.5rem 0 1rem;
+ }
+.tar_ancla h4 {
     margin-bottom: 1rem;
 }
- .job_ubi a,.gate_ubi a,.love_ubi a{
+ .tar_ancla a{
     text-decoration: none;
     background-color: rgb(254 192 7);
     border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
@@ -138,24 +142,25 @@ font-size: 1.5rem;
     font-weight: bold;
     font-size: 0.8rem;
  }
- .love_ubi a{
+ .tar_ancla .negocios{
     background-color: rgb(52,58,64);
     color: white;
  }
- .job_ubi .react,.gate_ubi .react,.love_ubi .start {
+ .tar_ancla .react {
     background-color: rgb(116 199 212);
     color: white;
     font-weight: bold;
     font-size: 0.8rem;
  }
- .love_ubi .start {
+ .tar_ancla .start {
     background-color: red;
  }
- .job_p,.gate_p,.love_p{
+ .tar_p{
     width: 18vw;
     font-size: 0.8rem;
     color: rgba(0,0,0,0.7);
     line-height: 1.2rem;
+    ;
 }
 .doble {
     display: flex;
@@ -166,20 +171,22 @@ font-size: 1.5rem;
 }
 .izquierda {
     background-image: url("../multimedia/imagenes/bsastres.jpg");
-    width: 50%;
+    width:49%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border:  0.05rem solid white;
+    box-shadow: 0.5rem 0 0.5rem 0;
 }
 .derecha {
     background-color: rgb(52,58,64);
-    width: 50%;
+    width: 49%;
     height: 100%;
-    border: 0.05rem solid white;
+   /* border: 0.05rem solid white;*/
     color: white;
     padding: 1.5rem 0.5rem 0 0.8rem;
+    box-shadow: 1rem 0 1rem 0;
 }
 .derecha h2{
     padding-bottom: 1rem;
@@ -192,6 +199,9 @@ font-weight: normal;
 line-height: 1.4rem;
 padding-right: 1rem;
 text-align: justify;
+}
+.ciudad:hover {
+    background-image: url("../multimedia/imagenes/ba12.jpg")
 }
 .conoce_bs {
     border: 1px double white ;
@@ -206,4 +216,12 @@ text-align: justify;
     font-weight: normal;
     font-size: 00.8rem;
     padding: 3rem 0.2rem;
+}
+.color {
+    margin-top: 2rem;
+    background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
+    width: 100%;
+    height: 10vh;
+    padding-left: 5rem;
+    padding-right: 1rem;
 }

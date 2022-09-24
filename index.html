@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
+   <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="./css/estilos.css">
     <title>Proyecto Html</title>
 </head>
@@ -24,7 +25,7 @@
     </header>
     <main>
         <section class="imagen_ppal">
-             <div class="imagen" >
+             <div class="imagen_uno">
              <div class="varios">
                 <h1 class="titulo">Conferencia Bs. As.</h1><br>
                 <p clas="parrafo">Bs. As. llega por primera vez a Argentina. Un evento para compartir con <br><br> nuestra comunidad el conocimiento y la experiencia de los expertos que <br><br> están creando el futuro de internet. Ven a conocer a los miembros del <br><br> evento, a otros estudiantes de Codo a Codo y los oradores de primer <br><br> nivel que tenemos para ti. Te esperamos! </p>
@@ -40,46 +41,47 @@
              <h2>CONOCE A LOS</h2>
             <h3>ORADORES</h3>
             <div class="orador_ubi"">
-                <div class="job job_borde" >
-                    <img  src="./multimedia/imagenes/steve.jpg" alt="Steve Jobs" width="300px" loading="lazy"/>
-                    <div class="job_ubi">
-                        <a href="">JavaSript</a>
-                        <a class="react" href="">React</a>
-                        <h4>Steve Jobs</h4>
-                        <p class="job_p">Las personas que construyeron Silicon Valley eran ingenieros. Aprendieron negocios, aprendieron muchas cosas diferentes, pero tenían la creencia real de que los humanos, si trabajaban duro con otras personas creativas e inteligentes, podrían resolver la mayoría de los problemas de la humanidad. Lo creo mucho</p>
+                <div class="orador_flex">
+                     <div class="tarjeta" >
+                            <img class="imagen" src="./multimedia/imagenes/steve.jpg" alt="Steve Jobs" width="300px" loading="lazy"/>
+                             <div class="tar_ancla">
+                                 <a href="">JavaSript</a>
+                                 <a class="react" href="">React</a>
+                                 <h4>Steve Jobs</h4>
+                                 <p class="tar_p">"Las personas que construyeron Silicon Valley eran ingenieros. Aprendieron negocios, aprendieron muchas cosas diferentes, pero tenían la creencia real de que los humanos, si trabajaban duro con otras personas creativas e inteligentes, podrían resolver la mayoría de los problemas de la humanidad".</p>
+                            </div>
+                     </div>  
+                     <div class="tarjeta">
+                            <img class="imagen" src="./multimedia/imagenes/bill.jpg" alt="Bill Gates" width="300px" loading="lazy" />
+                            <div class="tar_ancla">
+                                 <a href="">JavaSript</a>
+                                 <a class="react" href="">React</a>
+                                 <h4>Bill Gates</h4>
+                                 <p class="tar_p">"La primera regla de cualquier tecnología utilizada en un negocio es que la automatización aplicada a una operación eficiente magnificará la eficiencia. La segunda es que la automatización aplicada a una operación ineficiente magnificará la ineficiencia".</p>
+                               </div>
                     </div>
-                </div>
-                <div class="gate gate_borde">
-                    <img src="./multimedia/imagenes/bill.jpg" alt="Bill Gates" width="300px" loading="lazy" />
-                    <div class="gate_ubi">
-                         <a href="">JavaSript</a>
-                         <a class="react" href="">React</a>
-                         <h4>Bill Gates</h4>
-                        <p class="gate_p">La primera regla de cualquier tecnología utilizada en un negocio es que la automatización aplicada a una operación eficiente magnificará la eficiencia. La segunda es que la automatización aplicada a una operación ineficiente magnificará la ineficiencia.</p>
-                   </div>
-                 </div>
-                 <div class="love love_borde">
-                    <img src="./multimedia/imagenes/ada.jpeg" alt="Ada Lovelace" width="300px" loading="lazy" /> 
-                    <div class="love_ubi">
-                        <a href="">Negocios</a>
-                        <a class="start" href="">Startups</a>
-                        <h4>Ada Lovelace</h4>
-                        <p class="love_p">Así, no sólo lo mental y lo material, sino también lo teórico y lo práctico en el mundo matemático, se ponen en conexión más íntima y efectiva entre sí.</p>
+                    <div class="tarjeta">
+                            <img class="imagen" src="./multimedia/imagenes/ada.jpeg" alt="Ada Lovelace" width="300px" loading="lazy" class="img-thumbnail" /> 
+                             <div class="tar_ancla">
+                                  <a class="negocios" href="">Negocios</a>
+                                  <a class="start" href="">Startups</a>
+                                  <h4>Ada Lovelace</h4>
+                                  <p class="tar_p">"Así, no sólo lo mental y lo material, sino también lo teórico y lo práctico en el mundo matemático, se ponen en conexión más íntima y efectiva entre sí".</p>
+                             </div>
                     </div>
-                </div>
+             </div>    
         </section>
          <section class="doble" id="lugar_fecha">
-            <div class="izquierda">
-            </div>
-            <div class="derecha">
+            <div class="izquierda"></div>
+             <div class="derecha">
                 <h2>Bs. As. -  Octubre</h2>
-                <p>Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (CABA), también llamada Capital Federal, por ser la sede del gobierno nacional, es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden» que conforman el país. Tiene sus propios poderes ejecutivo, legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana. La Ciudad de Buenos Aires fue cedida en 1880 por la Provincia de Buenos Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital principal», junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994 goza de un régimen de autonomía.
+                <p > <a class="ciudad" href="">Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (CABA)</a>, también llamada Capital Federal, por ser la sede del gobierno nacional, es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden» que conforman el país. Tiene sus propios poderes ejecutivo, legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana. La Ciudad de Buenos Aires fue cedida en 1880 por la Provincia de Buenos Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital principal», junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994 goza de un régimen de autonomía.
                 Su tejido urbano se asemeja a un abanico que limita al sur, oeste y norte con la lindante provincia de Buenos Aires y al este con el Río de la Plata. Oficialmente la ciudad se encuentra dividida en 15 comunas que agrupan a 48 barrios. Desde 1880 hasta el presente se la llama también Capital Federal, aunque desde 1996 no figura oficialmente con ese nombre ni en su Constitución propia ni en la Constitución Nacional.
-                     </p>
+                </p>
                 <div class="conoce_bs">
                      <a href="">Conoce más</a>
                 </div>
-        </section ">
+        </section>
             <h7 id="conviertete">Conviértete en un</h7>
             <h2>ORADOR</h2>
             <h7>Anótate como orador para dar una <span style="text-decoration:underline">charla ignite</span>. Cuéntanos de qué quieres hablar!</h7>
@@ -87,14 +89,10 @@
             <form>
                <input type="text" placeholder="Nombre" required>
                <input type="text" placeholder="Apellido" required>
-               <br>
-               <br>
                <div>
-                <textarea name="" id="" cols="70" rows="8">Sobre qué quieres hablar?</textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Sobre qué quieres hablar?</textarea>
                 <br>
                 <h7>Recuerda incluir un título para tu charla</h7>
-                <br>
-                <br>
                 <div>
                     <p>Indique de que provincia es:</p>
                     <select>
@@ -104,13 +102,26 @@
                         <option value="">Rio Negro</option>
                         <option value="">Córdoba</option>
                     </select>
-                <br>
-                <br>
                 </div>
                 <input type="submit" value="Enviar">
                 <input type="submit" value="Limpiar">
                </div>
             </form>
         </section>
+        <footer class="color">
+            <div class="container-fluid">
+                <div class="row largo">
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Preguntas frecuentes</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Contáctanos</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Prensa</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Conferencias</a></div>
+                    <div class="col pt-3 pb-4"><a class="text-white text-decoration-none">Términos y condiciones</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none"">Privacidad</a></div>
+                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Estudiantes</a></div>
+                </div>
+            </div>
+                
+        </footer>
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
