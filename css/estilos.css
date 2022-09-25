@@ -203,6 +203,9 @@ text-align: justify;
 .ciudad:hover {
     background-image: url("../multimedia/imagenes/ba12.jpg")
 }
+.bsas a{
+    color:rgb(116 199 212);
+}
 .conoce_bs {
     border: 1px double white ;
     width: 6rem;
@@ -216,6 +219,71 @@ text-align: justify;
     font-weight: normal;
     font-size: 00.8rem;
     padding: 3rem 0.2rem;
+}
+.ciudad:visited{
+    background-image: url("./imagen/ba1.jpg");
+}
+
+.form_tit{
+    text-align: center;
+}
+.formu_flex{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    margin-top: 1rem;
+    background-color: white;
+   
+}
+.form_hijo_flex{
+    display: flex;
+     width: 70%;
+     height: 100%;
+    align-content:  center;
+    flex-direction: column;
+    
+    margin: 0 auto;
+}
+.form_imp {
+    display: flex;
+    height:10%;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+   
+}
+.datos {
+    text-align: left;
+    width:35%;
+    border-radius: 0.5rem grey;
+    margin-right: 1rem;
+}
+.form_tex {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2rem;
+    
+}
+.form_control {
+    text-align: left;
+    width: 72%;
+    margin-left: 8.3rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.recuerda {
+    display: flex;
+    flex-direction: column;
+    width: 78%; 
+    margin-top: 1rem;
+}
+.recuerda h7{
+     font-size: 0.7rem;
+     width: 60%;
 }
 .color {
     margin-top: 2rem;
