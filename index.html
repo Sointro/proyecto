@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-   <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
    <link rel="stylesheet" href="./css/estilos.css">
     <title>Proyecto</title>
 </head>
@@ -35,6 +35,17 @@
                  </div>
             </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+
        </section>
     </main>
         <section class="orador" id="oradores">
@@ -78,6 +89,7 @@
                 <p class="bsas"> <a class="ciudad" href="">Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires (CABA)</a>, también llamada Capital Federal, por ser la sede del gobierno nacional, es la capital y ciudad más poblada de la República Argentina. Esta metrópolis es una ciudad autónoma que constituye uno de los 24 distritos, o «jurisdicciones de primer orden» que conforman el país. Tiene sus propios poderes ejecutivo, legislativo y judicial. Está situada en la región centro-este del país, sobre la orilla sur del Río de la Plata, en la región pampeana. La Ciudad de Buenos Aires fue cedida en 1880 por la Provincia de Buenos Aires para que fuera la capital federal del país; a partir de 2020 es considerada «capital principal», junto a 24 capitales alternas. En virtud de la reforma constitucional de 1994 goza de un régimen de autonomía.
                 Su tejido urbano se asemeja a un abanico que limita al sur, oeste y norte con la lindante provincia de Buenos Aires y al este con el Río de la Plata. Oficialmente la ciudad se encuentra dividida en 15 comunas que agrupan a 48 barrios. Desde 1880 hasta el presente se la llama también Capital Federal, aunque desde 1996 no figura oficialmente con ese nombre ni en su Constitución propia ni en la Constitución Nacional.
                 </p>
+                
                 <div class="conoce_bs">
                      <a href="">Conoce más</a>
                 </div>
@@ -97,8 +109,8 @@
             <div class="recuerda">   
                 <h7>Recuerda incluir un título para tu charla</h7>
             </div>
-                <div>
-                    <p>Indique de que provincia es:</p>
+                <div class="selector_flex">
+                    <p class="selec_par">Indique de que provincia es:</p>
                     <select class="form_sel">
                         <option value="">Salta</option>
                         <option value="">Entre Rios</option>
@@ -107,25 +119,25 @@
                         <option value="">Córdoba</option>
                     </select>
                  </div>
-                     <div>
-                       <input type="submit" value="Enviar">
-                       <input type="submit" value="Limpiar">
+                     <div class="botones">
+                       <input class="botones_imp" type="submit" value="Enviar">
+                       <input class="botones_imp" type="submit" value="Limpiar">
                   </div>
             </form>
         </section>
         <footer class="color">
             <div class="container-fluid">
                 <div class="row largo">
-                    <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Preguntas frecuentes</a></div>
+                    <div class="col-1 pt-3 pb-4"><a class="text-white text-decoration-none">Preguntas frecuentes</a></div>
                     <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Contáctanos</a></div>
                     <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Prensa</a></div>
                     <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Conferencias</a></div>
-                    <div class="col pt-3 pb-4"><a class="text-white text-decoration-none">Términos y condiciones</a></div>
+                    <div class="col-1 pt-3 pb-4"><a class="text-white text-decoration-none">Términos y condiciones</a></div>
                     <div class="col pt-4 pb-4"><a class="text-white text-decoration-none"">Privacidad</a></div>
                     <div class="col pt-4 pb-4"><a class="text-white text-decoration-none">Estudiantes</a></div>
                 </div>
             </div>
         </footer>
-        <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
