@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
-   <link rel="stylesheet" href="./css/bootstrap.min.css">
-   <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Proyecto</title>
 </head>
 <body>
-    <header class="header_flex">
-        <div class="logo">
-          <img  class="img_logo" id="ppal" src="./multimedia/imagenes/codoacodo.png" alt="logo Codo a Codo" loading="lazy"> 
-            <h2 class="hedTit">Conf. Bs. As.</h2>
-        </div> 
-        <nav class="navegador">
-              <a class="link blanco" href="../index.html">La conferencia</a>  
-              <a class="link" href="./losoradores.html">Los oradores</a>
-              <a class="link" href="./lugaryfecha.html">El lugar y la fecha</a>
-              <a class="link" href="./contacto.html">Conviértete en orador</a>
-              <a class="link verde" href="./paginas/comprartickets.html">Comprar tickets</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light header_flex">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+              <img src="../multimedia/imagenes/codoacodo.png" alt="logo" width="100">
+                 Conf.Bs.As.
+             </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+             <div class="collapse navbar-collapse navegador" id="navbarSupportedContentr">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 header_final pe-2">
+                     <li class="nav-item">
+                        <a class="nav-link active text-white pe-2" aria-current="page" href="../index.html">La conferencia</a>
+                     </li>
+                     <li class="nav-item mt-2">
+                        <a class="link pe-2 ps-1" href="#oradores">Los oradores</a>
+                        <a class="link pe-2" href="#lugar_fecha">El lugar y la fecha</a>
+                         <a class="link pe-2" href="#conviertete">Conviértete en orador</a>
+                         <a class="link verde pe-2" href="./paginas/comprartickets.html">Comprar tickets</a>
+                    </li>
+                </ul>
+              </div>
+            </div>  
         </nav>
     </header>
     

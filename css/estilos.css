@@ -4,55 +4,30 @@
     box-sizing: border-box;
     font-family: Arial;;
 }
-.header_flex {
-    display: flex;
+.header_color {
     background-color: rgb(52,58,64);
-    width: 100vw;;
-    height:10vh;
-    justify-content: center;
+}
+.header_posicion {
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.alto {
+    height:85vh;
     margin: 0 auto;
 }
-.logo {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    padding-left: 3rem;
-}
-.img_logo {
-    width: 15%;
-}
-.hedTit {
-    color: white;
-    font-size: 1.3rem;
-    font-weight: normal;
-}
-.navegador {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 5rem;
-}
-.link {
-    text-decoration: none;
-    color: gray;;
-    
-}
-.blanco {
-    color: white;
-}
-.verde {
-    color: green;
-}
 .imagen_uno {
-   filter:brightness(50%);
+   filter: brightness(50%);
    width: 100%;
-    height: 100%;
+   height: 100%;
+   margin: 0 auto;
+}
+.img_uno_tit {
+    text-align: end;
 }
 .link_dos  {
    padding-top: 2rem;
-   
-}
+ }
 .link_dos a {
     text-decoration:none ;
     color:white;
@@ -69,7 +44,7 @@
     left: 60%;
 }
 .resaltar {
-    z-index: 10;
+   z-index: 10;
 }
 .orador {
     display: flex;
@@ -141,19 +116,16 @@
     font-size: 0.8rem;
     color: rgba(0,0,0,0.7);
     line-height: 1.2rem;
-    ;
 }
 .doble {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
     margin: 2rem auto;
 }
 .izquierda {
     background-image: url("../multimedia/imagenes/bsastres.jpg");
     width:49%;
-    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -162,12 +134,14 @@
 }
 .derecha {
     background-color: rgb(52,58,64);
-    width: 49%;
-    height: 100%;
+    width: 50%;
    /* border: 0.05rem solid white;*/
     color: white;
     padding: 1.5rem 0.5rem 0 0.8rem;
     box-shadow: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+
 }
 .derecha h2{
     padding-bottom: 1rem;
@@ -192,9 +166,9 @@ text-align: justify;
 .conoce_bs {
     border: 1px double white ;
     width: 6rem;
-    margin-top: 1rem;
-    padding: 0.3rem;
+    padding: 0.2rem;
     border-radius:0.3rem ;
+    margin-bottom: 00.5rem;
 }
 .conoce_bs a {
     color: white;
@@ -216,64 +190,13 @@ text-align: justify;
 .form_tit{
     text-align: center;
 }
-.formu_flex{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 40h;
-    margin-top: 1rem;
-    background-color: white;
-   
-}
-.form_hijo_flex{
-    display: flex;
-     width: 70%;
-     height: 100%;
-    align-content:  center;
-    flex-direction: column;
-    
-    margin: 0 auto;
-}
-.form_imp {
-    display: flex;
-    height:10%;
-    justify-content: center;
-    width: 100%;
+.form_tit a {
+    color: black;
     margin-bottom: 1rem;
-   
 }
-.datos {
-    text-align: left;
-    width:35%;
-    border-radius: 0.3rem grey;
-    margin-right: 1rem;
-}
-.form_tex {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 2rem;
-    
-}
-.form_control {
-    text-align: left;
-    width: 72%;
-    margin-left: 8.3rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    border-radius: 0.3rem;
-}
-.recuerda {
-    display: flex;
-    flex-direction: column;
-    width: 78%; 
-    margin-top: 1rem;
-}
-.recuerda h7{
-     font-size: 0.7rem;
-     width: 60%;
+.ancho {
+    width: 55%;
+    margin: 0 auto;
 }
 
 .selector_flex {
@@ -297,157 +220,433 @@ text-align: justify;
     margin-top: 1rem;
     height: 5vh;
 }
-.botones_imp {
+.boton_imp {
     background-color:rgb(150 201 62);
-    width: 35%;
+    width: 37%;
     margin-right: 1rem;
     border: none;
     border-radius: 0.3rem;
 }
+.boton_limp {
+background-color:rgb(150 201 62);
+    width:10%;
+     border: none;
+    border-radius: 0.3rem;
+}
 .color {
-    margin-top: 2rem;
+    width: 100%; 
     background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
-    width: 100%;
-    height: 10vh;
-    padding-left: 5rem;
-    padding-right: 1rem;
-}
-.colu_pri{
-    width: 5vw;
-}
-@media screen and (max-width: 576px) {
- .header_flex { 
-    flex-direction: column;
-    height: 30%;
-}
-.logo{
-    justify-content: space-between;
-    padding-left: 5rem0;
-}
-.img_logo {
-  width:20vw ;
+  
 }
 
-.navegador {
-   flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding-right: initial;
-   
-}
-.imagen_ppal{
-    width: 100%;
-}
-.link {
-    display: inline-block;
-    margin:0.5rem;
-    border-bottom: 0.1rem solid burlywood;
-    width: 100%;
-    text-align: center;    
-}
-.varios {
-    text-align: center;
-    padding: 7rem; 
-}
-.link_dos  {
-   padding-top: 1rem;
-   display: flex;
-   flex-direction: column;
-   align-content: center;
-}
- 
-.link_dost {
-    margin-top: 1rem;;
-}
+@media screen and (max-width: 500px) {
 
-.orador_ubi {
-     flex-direction: column;
-     align-content: center;
-    
-    
+.posicion {
+    top: 1%;
+    left: 15%;
+    width:85%;
+}
+.img_uno_tit {
+    font-size: 1rem;
+}
+.img_uno_parra {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    width: 90%;
 }
 .orador_flex {
-    flex-direction: column;
+    width:100%;
+    display:flex;
     align-content: center;
-   
+    flex-direction: column;
  }
  .tarjeta {
-    width: 80%;
-    margin-bottom:1rem;
+    border:1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+    width: 95%;
     box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
     -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
     -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+    align-self: center;
+    margin-bottom: 1rem;
 }
  .tar_p{
-    width: 90%; 
+    width: 100%;
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.7);
+    line-height: 1.2rem;
+    
 }
 .doble {
-    flex-direction: column;    
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 80vh;
+    margin: 0.1rem;
+    height:95vh;
 }
 .izquierda {
+    background-image: url("../multimedia/imagenes/bsastres.jpg");
     width: 100%;
-    height: 50%;
+    border:1px solid red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:  0.05rem solid white;
+    box-shadow: 0.5rem 0 0.5rem 0;
+    margin-bottom: 0.5rem;
+    height: 40%;
 }
 .derecha {
     width: 100%;
     height: 50%;
+    margin-left: 0.5rem;
 }
 .derecha h2{
-    padding-bottom: 0.5rem;
+    padding-bottom:0.5em;
     font-size: 1rem;
 }
 .derecha p {
-  font-size: 0.7rem;
-  line-height:0.8rem;
-  padding-right: 0.3rem;
-}
-.conoce_bs {
-    margin-top: 0.5rem;
-    padding: 0.3rem;
-}
-.conoce_bs a {
-    padding: 1rem 0.2rem;
+font-size: 0.7rem;
+font-weight: normal;
+line-height: 1rem;
+padding-right: 0.5rem;
 }
 
-.form_hijo_flex{
-     width:100%;
+.tam_tex {
+    font-size: 0.9rem;
 }
 
-.datos {
-    width:48%;
-    margin-left: 0.4rem;
-}
-.form_tex {
-    margin-top: 2rem;
-    
-}
-.form_control {
-    width: 96%;
-    margin-left: 0.3rem;
-}
-.recuerda {
-    width: 63%; 
-}
-.botones_imp {
-    width: 45%;
-}
 .color {
-    height:30vh;
-    padding-left: 5rem;
-    padding-right: 1rem;
-}
-.colu_pri{
-    width: 5vw;   
-}
-.largo{
-    display: flex;
-    width:100%;
-    align-content: center;
-   
-}
-.largo .difer{
-   margin-right: 3rem;
+    width: 100%; 
+    background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
+
 }
 }
+/*@media screen and (max-width:576px) {
+
+    .posicion {
+        top: 5%;
+        left: 12%;
+        width: 85%;
+    }
+    .img_uno_tit {
+        font-size: 1rem;
+    }
+    .img_uno_parra {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+        width: 90%;
+    }
+    .orador_flex {
+        width:100%;
+        display:flex;
+        align-content: center;
+        flex-direction: column;
+     }
+     .tarjeta {
+        border:1px solid rgb(214, 214, 214);
+        border-radius: 10px;
+        width: 85%;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+     .tar_p{
+        width: 100%;
+        font-size: 0.8rem;
+        color: rgba(0,0,0,0.7);
+        line-height: 1.2rem;
+        
+    }
+    .doble {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.1rem;
+        height:95vh;
+    }
+    .izquierda {
+        background-image: url("../multimedia/imagenes/bsastres.jpg");
+        width: 100%;
+        border:1px solid red;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border:  0.05rem solid white;
+        box-shadow: 0.5rem 0 0.5rem 0;
+        margin-bottom: 0.5rem;
+        height: 40%;
+    }
+    .derecha {
+        width: 100%;
+        height: 45%;
+    }
+    .derecha h2{
+        padding-bottom:0.5em;
+        font-size: 1rem;
+    }
+    .derecha p {
+    font-size: 0.7rem;
+    font-weight: normal;
+    line-height: 1rem;
+    padding-right: 0.5rem;
+    }
+    
+    .tam_tex {
+        font-size: 0.9rem;
+    }
+    
+    .color {
+        width: 100%; 
+        background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
+    
+    }
+    }
+    /*@media screen and (max-width:768px) {
+
+    .posicion {
+        top: 5%;
+        left: 20%;
+    }
+    .img_uno_tit {
+        font-size: 1.5rem;
+    }
+    .img_uno_parra {
+        font-size: 1rem;
+        margin-bottom: 0;
+        width: 90%;
+    }
+    .orador_flex {
+        width:100%;
+        display:flex;
+        align-content: center;
+        flex-direction: column;
+     }
+     .tarjeta {
+        border:1px solid rgb(214, 214, 214);
+        border-radius: 10px;
+        width: 90%;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+     .tar_p{
+        width: 100%;
+        font-size: 1rem;
+        color: rgba(0,0,0,0.7);
+        line-height: 1.2rem;
+        
+    }
+    .doble {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.1rem;
+        height:95vh;
+    }
+    .izquierda {
+        background-image: url("../multimedia/imagenes/bsastres.jpg");
+        width: 100%;
+        border:1px solid red;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border:  0.05rem solid white;
+        box-shadow: 0.5rem 0 0.5rem 0;
+        margin-bottom: 0.5rem;
+        height: 40%;
+    }
+    .derecha {
+        width: 100%;
+        height: 45%;
+    }
+    .derecha h2{
+        padding-bottom:0.5em;
+        font-size: 1.5rem;
+    }
+    .derecha p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1rem;
+    padding-right: 0.5rem;
+    }
+    
+    .tam_tex {
+        font-size: 0.9rem;
+    }
+    
+    .color {
+        width: 100%; 
+        background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
+    
+    }
+    }
+   /* @media screen and (min--width:992px) {
+
+    .posicion {
+        top: 15%;
+        left: 50%;
+        width: 50%;
+    }
+    .img_uno_tit {
+        font-size: 1.5rem;
+    }
+    .img_uno_parra {
+        font-size: 1rem;
+        margin-bottom: 0;
+        width: 90%;
+    }
+    .orador_flex {
+        width:100%;
+        display:flex;
+        align-content: center;
+        flex-direction: column;
+     }
+     .tarjeta {
+        border:1px solid rgb(214, 214, 214);
+        border-radius: 10px;
+        width: 90%;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+     .tar_p{
+        width: 100%;
+        font-size: 1rem;
+        color: rgba(0,0,0,0.7);
+        line-height: 1.2rem;
+        
+    }
+    .doble {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.1rem;
+        height:95vh;
+    }
+    .izquierda {
+        background-image: url("../multimedia/imagenes/bsastres.jpg");
+        width: 100%;
+        border:1px solid red;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border:  0.05rem solid white;
+        box-shadow: 0.5rem 0 0.5rem 0;
+        margin-bottom: 0.5rem;
+        height: 40%;
+    }
+    .derecha {
+        width: 100%;
+        height: 45%;
+    }
+    .derecha h2{
+        padding-bottom:0.5em;
+        font-size: 1.5rem;
+    }
+    .derecha p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.2rem;
+    padding-right: 0.5rem;
+    }
+    
+    .tam_tex {
+        font-size: 0.9rem;
+    }
+    
+    .color {
+        width: 100%; 
+        background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
+    
+    }
+    }
+    @media screen and (min-width:1081px) {
+
+    .posicion {
+        top:40%;
+        left: 50%;
+        width: 50%;
+    }
+    .img_uno_tit {
+        font-size: 1.5rem;
+    }
+    .img_uno_parra {
+        font-size: 1rem;
+        margin-bottom: 0;
+        width: 90%;
+    }
+    .orador_flex {
+        width:100%;
+        display:flex;
+        align-content: center;
+        flex-direction: column;
+     }
+     .tarjeta {
+        border:1px solid rgb(214, 214, 214);
+        border-radius: 10px;
+        width: 90%;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+     .tar_p{
+        width: 100%;
+        font-size: 1rem;
+        color: rgba(0,0,0,0.7);
+        line-height: 1.2rem;
+        
+    }
+    .doble {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.1rem;
+        height:95vh;
+    }
+    .izquierda {
+        background-image: url("../multimedia/imagenes/bsastres.jpg");
+        width: 100%;
+        border:1px solid red;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border:  0.05rem solid white;
+        box-shadow: 0.5rem 0 0.5rem 0;
+        margin-bottom: 0.5rem;
+        height: 40%;
+    }
+    .derecha {
+        width: 100%;
+        height: 45%;
+    }
+    .derecha h2{
+        padding-bottom:0.5em;
+        font-size: 1.5rem;
+    }
+    .derecha p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.2rem;
+    padding-right: 0.5rem;
+    }
+    
+    .tam_tex {
+        font-size: 0.9rem;
+    }
+    
+    .color {
+        width: 100%; 
+        background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
+    
+    }
+    }
+
