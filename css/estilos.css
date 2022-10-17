@@ -19,14 +19,19 @@
 .imagen_uno {
    filter: brightness(50%);
    width: 100%;
-   height: 100%;
    margin: 0 auto;
 }
 .img_uno_tit {
-    text-align: end;
+    text-align: right;
+    margin-right: 1rem;
 }
 .link_dos  {
-   padding-top: 2rem;
+   text-align-last: right;
+   margin-top: 2rem;
+ }
+ .img_uno_parra{
+    text-align: right;
+    margin-right: 2rem;
  }
 .link_dos a {
     text-decoration:none ;
@@ -38,10 +43,11 @@
 } 
 .link_dost {
     background-color: rgb(41 167 68);
+    margin-right: 2rem;
 }
 .posicion {
-    top: 50%;
-    left: 60%;
+    top: 45%;
+    left:50%;
 }
 .resaltar {
    z-index: 10;
@@ -77,11 +83,9 @@
     border-radius: 10px;
     box-shadow: 0.5rem 0 0.5rem 0;
 }
-
 .imagen {
     width: 100%;
     border-radius: 10px;
-    height:58%;
 }
  .tar_ancla {
    width:100%;
@@ -117,6 +121,20 @@
     color: rgba(0,0,0,0.7);
     line-height: 1.2rem;
 }
+.arriba {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.arriba a {
+    text-align: end;
+    background-color: white;
+    z-index: 5;
+   
+}
 .doble {
     display: flex;
     justify-content: center;
@@ -141,7 +159,6 @@
     box-shadow: 1rem 0 1rem 0;
     display: flex;
     flex-direction: column;
-
 }
 .derecha h2{
     padding-bottom: 1rem;
@@ -149,16 +166,14 @@
     font-weight: 200;
 }
 .derecha p {
-font-size: 0.8rem;
-font-weight: normal;
-line-height: 1.4rem;
-padding-right: 1rem;
-text-align: justify;
+    font-size: 0.8rem;
+    font-weight: normal;
+    line-height: 1.4rem;
+    padding-right: 1rem;
+    text-align: justify;
 }
-
 .ciudadd:hover {
     background-image: url("../css/imagen/mapacaba.jpg");
-    
 }
 .bsas a{
     color:rgb(116 199 212);
@@ -186,7 +201,6 @@ text-align: justify;
     z-index: 10;
     margin-left: 10px;
 }
-
 .form_tit{
     text-align: center;
 }
@@ -198,7 +212,6 @@ text-align: justify;
     width: 55%;
     margin: 0 auto;
 }
-
 .selector_flex {
     display: inline-flex;
     width: 100%;
@@ -206,7 +219,6 @@ text-align: justify;
     align-content: center;
     justify-content: center;
     margin-top: 1rem;
-    
 }
 .form_selec {
     text-align: center;
@@ -228,37 +240,84 @@ text-align: justify;
     border-radius: 0.3rem;
 }
 .boton_limp {
-background-color:rgb(150 201 62);
+    background-color:rgb(150 201 62);
     width:10%;
-     border: none;
-    border-radius: 0.3rem;
+    border: none;
+    border-radius: 0.3rem;;
 }
 .color {
     width: 100%; 
     background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
-  
+ }
+ /*pagina comprar tickets*/
+ .header_ancho {
+    width: 16%;
+    height: 20%;
+   
 }
-
-@media screen and (max-width: 500px) {
-
+.header_azul {
+    background-color: rgb(13 110 253);
+    
+}
+.borde_azul {
+    border: 1px solid rgb(13 110 253);
+}
+.header_celeste {
+    background-color: rgb(12 202 240);
+}
+.borde_celeste {
+    border: 1px solid rgb(12 202 240);
+}
+.header_amarillo {
+    background-color: rgb(255 193 7);
+}
+.borde_amarillo {
+    border: 1px solid rgb(255 193 7);
+}
+.presentar {
+    font-size: .8rem;
+    color: grey;
+}
+.form_ancho {
+    width: 56%;
+    justify-content: center;
+}
+.pagar {
+    height:10vh;
+    background-color:rgba(207,226,255);
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+}
+.btn_ancho {
+    width: 50%;
+}
+/*medias*/
+ @media screen and (max-width: 500px) {
 .posicion {
-    top: 1%;
+    top:40%;
     left: 15%;
-    width:85%;
+}
+.imagen_uno{
+    height: auto;
 }
 .img_uno_tit {
     font-size: 1rem;
+    text-align: end;
 }
 .img_uno_parra {
+    display: none;
     font-size: 0.8rem;
-    margin-bottom: 0;
-    width: 90%;
+    margin-bottom:0;
 }
 .orador_flex {
     width:100%;
     display:flex;
     align-content: center;
     flex-direction: column;
+ }
+ .link_dos {
+    padding-top: 0rem;
+    margin-right: 0;
  }
  .tarjeta {
     border:1px solid rgb(214, 214, 214);
@@ -275,14 +334,13 @@ background-color:rgb(150 201 62);
     font-size: 0.8rem;
     color: rgba(0,0,0,0.7);
     line-height: 1.2rem;
-    
 }
 .doble {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0.1rem;
-    height:95vh;
+    margin-bottom: 0.5rem;
+    height:100vh;
 }
 .izquierda {
     background-image: url("../multimedia/imagenes/bsastres.jpg");
@@ -298,125 +356,42 @@ background-color:rgb(150 201 62);
 }
 .derecha {
     width: 100%;
-    height: 50%;
+    height: 60%;
     margin-left: 0.5rem;
 }
 .derecha h2{
     padding-bottom:0.5em;
-    font-size: 1remm;
+    font-size: 1rem;
 }
 .derecha p {
-font-size: 0.7rem;
-font-weight: normal;
-line-height: 1rem;
-padding-right: 0.5rem;
-}
-
-.tam_tex {
-    font-size: 0.9rem;
-}
-
-.color {
-    width: 100%; 
-    background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
-
-}
-}
-/*@media screen and (max-width:576px) {
-
-    .posicion {
-        top: 5%;
-        left: 12%;
-        width: 85%;
-    }
-    .img_uno_tit {
-        font-size: 1rem;
-    }
-    .img_uno_parra {
-        font-size: 0.8rem;
-        margin-bottom: 0;
-        width: 90%;
-    }
-    .orador_flex {
-        width:100%;
-        display:flex;
-        align-content: center;
-        flex-direction: column;
-     }
-     .tarjeta {
-        border:1px solid rgb(214, 214, 214);
-        border-radius: 10px;
-        width: 85%;
-        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        align-self: center;
-        margin-bottom: 1rem;
-    }
-     .tar_p{
-        width: 100%;
-        font-size: 0.8rem;
-        color: rgba(0,0,0,0.7);
-        line-height: 1.2rem;
-        
-    }
-    .doble {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0.1rem;
-        height:95vh;
-    }
-    .izquierda {
-        background-image: url("../multimedia/imagenes/bsastres.jpg");
-        width: 100%;
-        border:1px solid red;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border:  0.05rem solid white;
-        box-shadow: 0.5rem 0 0.5rem 0;
-        margin-bottom: 0.5rem;
-        height: 40%;
-    }
-    .derecha {
-        width: 100%;
-        height: 45%;
-    }
-    .derecha h2{
-        padding-bottom:0.5em;
-        font-size: 1rem;
-    }
-    .derecha p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: normal;
     line-height: 1rem;
     padding-right: 0.5rem;
-    }
-    
-    .tam_tex {
-        font-size: 0.9rem;
-    }
-    
-    .color {
-        width: 100%; 
-        background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
-    
-    }
-    }
-    /*@media screen and (max-width:768px) {
-
+}
+.tam_tex {
+    font-size: 0.8rem;
+}
+}
+/*2da media*/
+@media screen and (min-width: 501px) and (max-width: 768px){
     .posicion {
-        top: 5%;
+        top:1%;
         left: 20%;
     }
+    .imagen_uno {
+        height: auto;
+    }
     .img_uno_tit {
         font-size: 1.5rem;
     }
     .img_uno_parra {
         font-size: 1rem;
         margin-bottom: 0;
-        width: 90%;
+        width: 100%;
+    }
+    .link_dos {
+        padding-top: 0.3rem;
     }
     .orador_flex {
         width:100%;
@@ -427,7 +402,7 @@ padding-right: 0.5rem;
      .tarjeta {
         border:1px solid rgb(214, 214, 214);
         border-radius: 10px;
-        width: 90%;
+        width: 85%;
         box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
         -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
         -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
@@ -436,10 +411,9 @@ padding-right: 0.5rem;
     }
      .tar_p{
         width: 100%;
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: rgba(0,0,0,0.7);
         line-height: 1.2rem;
-        
     }
     .doble {
         display: flex;
@@ -462,90 +436,66 @@ padding-right: 0.5rem;
     }
     .derecha {
         width: 100%;
-        height: 45%;
+        height: 55%;
     }
     .derecha h2{
         padding-bottom:0.5em;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
     }
     .derecha p {
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1rem;
-    padding-right: 0.5rem;
+        font-size: 0.6rem;
+        font-weight: normal;
+        line-height: 1rem;
+        padding-right: 0.5rem;
     }
-    
     .tam_tex {
         font-size: 0.9rem;
     }
-    
-    .color {
-        width: 100%; 
-        background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
-    
     }
-    }
-   /* @media screen and (min--width:992px) {
-
+    /*3era media*/
+    @media screen and (min-width: 769px) and (max-width: 992px) {
     .posicion {
-        top: 15%;
-        left: 50%;
+        top: 30%;
+        left: 40%;
+    }
+    .imagen_uno {
+        height: auto;
+    }
+    .img_uno_tit {
+        font-size: 1.5rem;
+    }
+    .img_uno_parra {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .orador_flex {
+        display:flex;
+        justify-content: space-between;
+     }
+     .tarjeta {
+        border:1px solid rgb(214, 214, 214);
+        border-radius: 10px;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        margin-bottom: 1rem;
+    }
+     .tar_p{
+        font-size: 1rem;
+        color: rgba(0,0,0,0.7);
+        line-height: 1.rem;
+    }
+    .doble {
+        display: flex;
+        width: 100%;
+        margin: 0.1rem;
+    }
+    .izquierda {
+        margin-bottom: 0.5rem;
+    }
+    .derecha {
         width: 50%;
     }
-    .img_uno_tit {
-        font-size: 1.5rem;
-    }
-    .img_uno_parra {
-        font-size: 1rem;
-        margin-bottom: 0;
-        width: 90%;
-    }
-    .orador_flex {
-        width:100%;
-        display:flex;
-        align-content: center;
-        flex-direction: column;
-     }
-     .tarjeta {
-        border:1px solid rgb(214, 214, 214);
-        border-radius: 10px;
-        width: 90%;
-        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        align-self: center;
-        margin-bottom: 1rem;
-    }
-     .tar_p{
-        width: 100%;
-        font-size: 1rem;
-        color: rgba(0,0,0,0.7);
-        line-height: 1.2rem;
-        
-    }
-    .doble {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0.1rem;
-        height:95vh;
-    }
-    .izquierda {
-        background-image: url("../multimedia/imagenes/bsastres.jpg");
-        width: 100%;
-        border:1px solid red;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border:  0.05rem solid white;
-        box-shadow: 0.5rem 0 0.5rem 0;
-        margin-bottom: 0.5rem;
-        height: 40%;
-    }
-    .derecha {
-        width: 100%;
-        height: 45%;
-    }
     .derecha h2{
         padding-bottom:0.5em;
         font-size: 1.5rem;
@@ -553,100 +503,8 @@ padding-right: 0.5rem;
     .derecha p {
     font-size: 1rem;
     font-weight: normal;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     padding-right: 0.5rem;
     }
-    
-    .tam_tex {
-        font-size: 0.9rem;
     }
-    
-    .color {
-        width: 100%; 
-        background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
-    
-    }
-    }
-    @media screen and (min-width:1081px) {
-
-    .posicion {
-        top:40%;
-        left: 50%;
-        width: 50%;
-    }
-    .img_uno_tit {
-        font-size: 1.5rem;
-    }
-    .img_uno_parra {
-        font-size: 1rem;
-        margin-bottom: 0;
-        width: 90%;
-    }
-    .orador_flex {
-        width:100%;
-        display:flex;
-        align-content: center;
-        flex-direction: column;
-     }
-     .tarjeta {
-        border:1px solid rgb(214, 214, 214);
-        border-radius: 10px;
-        width: 90%;
-        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        align-self: center;
-        margin-bottom: 1rem;
-    }
-     .tar_p{
-        width: 100%;
-        font-size: 1rem;
-        color: rgba(0,0,0,0.7);
-        line-height: 1.2rem;
-        
-    }
-    .doble {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0.1rem;
-        height:95vh;
-    }
-    .izquierda {
-        background-image: url("../multimedia/imagenes/bsastres.jpg");
-        width: 100%;
-        border:1px solid red;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border:  0.05rem solid white;
-        box-shadow: 0.5rem 0 0.5rem 0;
-        margin-bottom: 0.5rem;
-        height: 40%;
-    }
-    .derecha {
-        width: 100%;
-        height: 45%;
-    }
-    .derecha h2{
-        padding-bottom:0.5em;
-        font-size: 1.5rem;
-    }
-    .derecha p {
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.2rem;
-    padding-right: 0.5rem;
-    }
-    
-    .tam_tex {
-        font-size: 0.9rem;
-    }
-    
-    .color {
-        width: 100%; 
-        background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
-    
-    }
-    }
-
+   
