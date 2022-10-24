@@ -254,6 +254,9 @@
     background-image: linear-gradient(to left, rgb(41, 93, 126), rgb(54, 79, 94));
  }
  /*pagina comprar tickets*/
+ .sombra {
+    text-shadow:-8px -6px 1px rgb(41 167 68);
+ }
  .header_ancho {
     width: 32%;
     height: 20%;
