@@ -46,7 +46,7 @@
     margin-right: 2rem;
 }
 .posicion {
-    top: 45%;
+    top: 35%;
     left:50%;
 }
 .resaltar {
@@ -121,20 +121,23 @@
     color: rgba(0,0,0,0.7);
     line-height: 1.2rem;
 }
+/*icono arriba*/
 .arriba {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
     width: 90%;
     margin: 0 auto;
+    background-color: aqua;
     
 }
 .arriba a {
     text-align: end;
-    background-color: white;
+    background-color:white;
     z-index: 5;
-   
+    display: inline-block;
 }
+/*hascta icono arriba*/
 .doble {
     display: flex;
     justify-content: center;
@@ -172,9 +175,6 @@
     padding-right: 1rem;
     text-align: justify;
 }
-.ciudadd:hover {
-    background-image: url("../css/imagen/mapacaba.jpg");
-}
 .bsas a{
     color:rgb(116 199 212);
 }
@@ -200,6 +200,10 @@
     background-repeat: no-repeat;
     z-index: 10;
     margin-left: 10px;
+}
+.entradas_hov:hover {
+    background-color: chartreuse;
+    z-index: 5;
 }
 .form_tit{
     text-align: center;
@@ -251,13 +255,11 @@
  }
  /*pagina comprar tickets*/
  .header_ancho {
-    width: 16%;
+    width: 32%;
     height: 20%;
-   
 }
 .header_azul {
     background-color: rgb(13 110 253);
-    
 }
 .borde_azul {
     border: 1px solid rgb(13 110 253);
@@ -279,7 +281,7 @@
     color: grey;
 }
 .form_ancho {
-    width: 56%;
+    width: 55%;
     justify-content: center;
 }
 .pagar {
@@ -287,9 +289,18 @@
     background-color:rgba(207,226,255);
     padding-left: 1rem;
     border-radius: 0.5rem;
+    line-height:4.5;
 }
 .btn_ancho {
     width: 50%;
+}
+.imp_ancho {
+    width:initial;
+}
+.font_ticket {
+    font-size: 1rem;
+    color:grey;
+    line-height: 1.5;
 }
 /*medias*/
  @media screen and (max-width: 500px) {
@@ -372,6 +383,18 @@
 .tam_tex {
     font-size: 0.8rem;
 }
+.header_ancho {
+    width:1000%;
+    margin: 0 auto;
+    margin-bottom:1rem;
+}
+
+.ticket_chico {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 }
 /*2da media*/
 @media screen and (min-width: 501px) and (max-width: 768px){
@@ -451,9 +474,87 @@
     .tam_tex {
         font-size: 0.9rem;
     }
+    
+    .ticket_chico {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .header_ancho {
+        width:100%;
+        margin: 0 auto;
+        margin-bottom:1rem;
+    }
+
+    .ticket_chico {
+         display: flex;
+         flex-direction: column;
+         align-self: center;
+    }
     }
     /*3era media*/
     @media screen and (min-width: 769px) and (max-width: 992px) {
+    .posicion {
+        top: 30%;
+        left: 40%;
+    }
+    .imagen_uno {
+        height: auto;
+    }
+    .img_uno_tit {
+        font-size: 1.5rem;
+    }
+    .img_uno_parra {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .orador_flex {
+        display:flex;
+        justify-content: space-between;
+     }
+     .tarjeta {
+        border:1px solid rgb(214, 214, 214);
+        border-radius: 10px;
+        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
+        margin-bottom: 1rem;
+    }
+     
+    .doble {
+        display: flex;
+        width: 100%;
+        margin: 0.1rem;
+    }
+    .izquierda {
+        margin-bottom: 0.5rem;
+    }
+    .derecha {
+        width: 50%;
+    }
+    .derecha h2{
+        padding-bottom:0.5em;
+        font-size: 1.5rem;
+    }
+    .derecha p {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.3rem;
+    padding-right: 0.5rem;
+    }
+    .header_ancho {
+        width:100%;
+        margin: 0 auto;
+        margin-bottom:1rem;
+    }
+
+    .ticket_chico {
+         display: flex;
+         flex-direction: column;
+         align-self: center;
+    }
+    }
+   /*  @media screen and (min-width: 993px) {
     .posicion {
         top: 30%;
         left: 40%;
@@ -501,10 +602,11 @@
         font-size: 1.5rem;
     }
     .derecha p {
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.3rem;
-    padding-right: 0.5rem;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.3rem;
+        padding-right: 0.5rem;
     }
+    
     }
-   
+        
