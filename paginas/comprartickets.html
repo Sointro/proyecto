@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">>
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Comprar Tickets</title>
 </head>
@@ -73,21 +73,22 @@
             <form class="ms-2">
                 <div class="form_ancho col mx-auto my-auto">
                     <div class="mb-3 d-flex col ">
-                        <input type="text" class="form-control w-30 me-4" placeholder="Nombre"required >
-                        <input type="text" class="form-control w-30 5" placeholder="Apellido" required>
+                        <input id="nombre" type="text" class="form-control w-30 me-4" placeholder="Nombre">
+                        <input id="apellido"type="text" class="form-control w-30 " placeholder="Apellido">
                     </div>
                     <div class="d-flex col">
-                        <input type="email" class="form-control mb-3" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <input id="correo" type="email" class="form-control mb-3" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="d-flex row imp_ancho justify-conten-between">
                         <div class="col">
                             <h2 class="font_ticket">Cantidad</h2>
-                            <input type="text" class="form-control w-100" placeholder="Cantidad" >
+                            <input id="cantidad" type="number" class="form-control w-100" placeholder="Cantidad">
                         </div>
                         <div class="col">
                             <h2 class="font_ticket">Categoría</h2>
-                            <select class="w-100 form-select pe-4" aria-label="Default select example">
-                            <option class="font_ticket" selected>--Seleccione--</option>
+                            <select class="w-100 form-select pe-4" aria-label="Categoria" id="seleccion">
+                            <option value="" class="font_ticket" id="sel" selected>--Seleccione--</option>
+                            <option class="font_ticket" value="0">Sin categoría</option>
                             <option class="font_ticket" value="1">Estudiante</option>
                             <option class="font_ticket" value="2">Trainee</option>
                             <option class="font_ticket" value="3">Junior</option>
@@ -95,11 +96,11 @@
                         </div>
                     </div>
                     <div class="pagar my-4">
-                        <p class="text-primary text-sm-start text-md-start text-lg-start rounded-3 ubicacion_media">Total a pagar:$</p>
+                        <p class="text-primary text-sm-start text-md-start text-lg-start rounded-3 ubicacion_media">Total a pagar:$ <span id="importe_total" class="fw-bold"></span></p>
                     </div>
                     <div class="botones mb-3">
-                        <input class="boton_imp btn_ancho text-white fs-5" type="submit" value=Borrar>
-                        <input class="boton_limp btn_ancho tam_tex text-white fs-5" type="submit" value="Resumen">
+                        <button class="boton_imp btn_ancho text-white fs-5" type="reset" id="btnBorrar">Borrar</button>
+                        <button class="boton_limp btn_ancho tam_tex text-white fs-5" type="button" id="btnResumen">Resumen</button>
                    </div>
                 </div>
             </form>
@@ -118,6 +119,7 @@
                 </div>
             </div>
      </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+   <!--> <script src="../js/bootstrap.bundle.min.js"></script>-->
+    <script src="../js/comprar.js"></script>
 </body>
 </html>
